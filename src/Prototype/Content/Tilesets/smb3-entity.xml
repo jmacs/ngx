@@ -1,0 +1,172 @@
+﻿<?xml version="1.0"?>
+<Tileset texture="content/images/smb3-entity.png" size="400">
+    
+  <Tiles>
+
+    <!-- camera -->
+    <Tile id="1" x="384" y="10" w="16" h="16" type="0" prop="0" />
+
+    <!-- smashed brick particle -->
+    <Tile id="2" x="228" y="494" w="8" h="8" type="0" prop="0" />
+    
+    <!-- goomba -->
+    <Tile id="10" x="4" y="14" w="16" h="16" type="0" prop="0" />
+    <Tile id="11" x="24" y="14" w="16" h="16" type="0" prop="0" />
+    <Tile id="12" x="44" y="14" w="16" h="16" type="0" prop="0" />
+
+    <!-- koopa -->
+    <Tile id="13" x="288" y="127" w="16" h="28" type="0" prop="0" />
+    <Tile id="14" x="310" y="127" w="16" h="28" type="0" prop="0" />
+
+    <!-- koopa (in shell) -->
+    <Tile id="15" x="243" y="138" w="18" h="16" type="0" prop="0" />
+    <Tile id="16" x="265" y="138" w="18" h="16" type="0" prop="0" />
+
+    <!-- koopa torpedo shell -->
+    <Tile id="17" x="347" y="99" w="16" h="16" type="0" prop="0" />
+    <Tile id="18" x="367" y="99" w="16" h="16" type="0" prop="0" />
+    <Tile id="19" x="387" y="99" w="16" h="16" type="0" prop="0" />
+    <Tile id="20" x="406" y="99" w="16" h="16" type="0" prop="0" />
+ 
+    <!-- coin -->
+    <Tile id="100" x="104" y="456" w="16" h="16" type="0" prop="0" />
+    <Tile id="101" x="120" y="456" w="16" h="16" type="0" prop="0" />
+    <Tile id="102" x="139" y="457" w="16" h="16" type="0" prop="0" />
+    <Tile id="103" x="160" y="456" w="16" h="16" type="0" prop="0" />
+    <Tile id="104" x="176" y="456" w="16" h="16" type="0" prop="0" />
+
+    <!-- mushroom -->
+    <Tile id="105" x="75" y="458" w="16" h="16" type="0" prop="0" />
+
+    <!-- normal mario -->
+    <Tile id="200" x="4" y="631" w="16" h="16" type="0" prop="0" />
+    <Tile id="201" x="21" y="631" w="16" h="16" type="0" prop="0" />
+    <Tile id="202" x="37" y="631" w="16" h="16" type="0" prop="0" />
+    <Tile id="203" x="54" y="631" w="16" h="16" type="0" prop="0" />
+    <Tile id="204" x="71" y="631" w="16" h="16" type="0" prop="0" />
+    <Tile id="205" x="89" y="631" w="16" h="16" type="0" prop="0" />
+
+    <!-- super mario -->
+    <Tile id="250" x="41" y="671" w="16" h="28" type="0" prop="0" /> 
+    <Tile id="251" x="59" y="671" w="16" h="28" type="0" prop="0" />
+    <Tile id="252" x="78" y="671" w="16" h="28" type="0" prop="0" />
+    <Tile id="253" x="116" y="671" w="16" h="28" type="0" prop="0" />
+    <Tile id="254" x="223" y="671" w="16" h="28" type="0" prop="0" />
+    <Tile id="255" x="260" y="671" w="16" h="28" type="0" prop="0" />
+
+    <!-- world normal mario -->
+    <Tile id="300" x="4" y="631" w="16" h="16" type="0" prop="0" />
+    <Tile id="301" x="21" y="631" w="16" h="16" type="0" prop="0" />
+    
+  </Tiles>
+  
+  <Animations>
+
+    <!-- coin -->
+    
+    <Animation id="10" name="coin.spin" >
+      <Frame tile="100" time="0.50" />
+      <Frame tile="101" time="0.50" />
+      <Frame tile="102" time="0.50" />
+      <Frame tile="103" time="0.50" />
+      <Frame tile="104" time="0.50" />
+    </Animation>
+
+    <!-- goomba -->
+    
+    <Animation id="1000" name="goomba.walk" >
+      <Frame tile="10" time="0.200" />
+      <Frame tile="11" time="0.200" />
+    </Animation>
+
+    <Animation id="1010" name="goomba.idle" >
+      <Frame tile="10" time="0.200" />
+    </Animation>
+    
+    <Animation id="1020" name="goomba.stomp" >
+        <Frame tile="12" time="0.200" />
+    </Animation>
+
+    <!-- koopa -->
+
+    <Animation id="1100" name="koopa.walk" >
+      <Frame tile="13" time="0.200" />
+      <Frame tile="14" time="0.200" />
+    </Animation>
+
+    <Animation id="1110" name="koopa.idle" >
+      <Frame tile="13" time="0.200" />
+    </Animation>
+
+    <Animation id="1120" name="koopa.shell" >
+      <Frame tile="16" time="0.400" />
+      <Frame tile="15" time="0.400" />
+    </Animation>
+
+    <Animation id="1130" name="koopa.torpedo" >
+      <Frame tile="17" time="0.050" />
+      <Frame tile="18" time="0.050" />
+      <Frame tile="19" time="0.050" />
+      <Frame tile="20" time="0.050" />
+    </Animation>
+    
+    <!-- world.mario -->
+
+    <Animation id="1150" name="wolrd.normal.mario" >
+      <Frame tile="300" time="0.200" />
+      <Frame tile="301" time="0.200" />
+    </Animation>
+    
+    <!-- normal.mario -->
+
+    <Animation id="2000" name="normal.mario.idle" >
+      <Frame tile="202" time="0.100" />
+    </Animation>
+    
+    <Animation id="2010" name="normal.mario.walk" >
+      <Frame tile="203" time="0.100" />
+      <Frame tile="202" time="0.100" />
+    </Animation>
+
+    <Animation id="2020" name="normal.mario.jump" >
+      <Frame tile="205" time="0.0" />
+    </Animation>
+
+    <Animation id="2030" name="normal.mario.duck" >
+      <Frame tile="202" time="0.0" />
+    </Animation>
+
+    <Animation id="2040" name="normal.mario.headshot" >
+      <Frame tile="300" time="0.0" />
+    </Animation>
+
+    <!-- super.mario -->
+    
+    <Animation id="2100" name="super.mario.idle" >
+      <Frame tile="250" time="0.100" />
+    </Animation>
+    
+    <Animation id="2110" name="super.mario.walk" >
+      <Frame tile="250" time="0.100" />
+      <Frame tile="251" time="0.100" />
+    </Animation>
+
+    <Animation id="2120" name="super.mario.jump" >
+      <Frame tile="252" time="0.0" />
+    </Animation>
+
+    <Animation id="2130" name="super.mario.duck" >
+      <Frame tile="254" time="0.0" />
+    </Animation>
+
+    <Animation id="2140" name="super.mario.headshot" >
+      <Frame tile="255" time="0.0" />
+    </Animation>
+
+    <!-- flower mario // 2300 -->
+    
+    <!-- racoon mario //2400 -->
+
+  </Animations>
+  
+</Tileset>

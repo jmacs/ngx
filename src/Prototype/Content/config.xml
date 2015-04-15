@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Config>
+  <ScreenWidth>1280</ScreenWidth>
+  <ScreenHeight>720</ScreenHeight>
+  <IsFullScreen>false</IsFullScreen>
+  <IsSoundEnabled>true</IsSoundEnabled>
+</Config>

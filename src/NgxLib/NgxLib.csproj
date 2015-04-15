@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B70101B9-A2D7-479B-86E9-77BFA36C8942}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NgxLib</RootNamespace>
+    <AssemblyName>NgxLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lidgren.Network, Version=2011.3.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\MonoGame\WindowsGL\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework, Version=3.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\MonoGame\WindowsGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\MonoGame\WindowsGL\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tao.Sdl, Version=1.2.13.0, Culture=neutral, PublicKeyToken=9c7a200e36c0094e, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\MonoGame\WindowsGL\Tao.Sdl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\SoundClip.cs" />
+    <Compile Include="Behaviors\Task.cs" />
+    <Compile Include="Behaviors\BehaviorModule.cs" />
+    <Compile Include="Behaviors\Composite.cs" />
+    <Compile Include="Behaviors\Conditional.cs" />
+    <Compile Include="Behaviors\Decorator.cs" />
+    <Compile Include="Behaviors\Indexer.cs" />
+    <Compile Include="Behaviors\Inverter.cs" />
+    <Compile Include="BitwiseExtensions.cs" />
+    <Compile Include="INgxCommand.cs" />
+    <Compile Include="NgxCommandExecutor.cs" />
+    <Compile Include="Gui\Control.cs" />
+    <Compile Include="Gui\ControlCollection.cs" />
+    <Compile Include="Gui\Panel.cs" />
+    <Compile Include="Gui\ControlLayout.cs" />
+    <Compile Include="Input\GamepadBinding.cs" />
+    <Compile Include="NgxComponentConfiguration.cs" />
+    <Compile Include="NgxComponentMetaData.cs" />
+    <Compile Include="Ngx.cs" />
+    <Compile Include="NgxContextCollection.cs" />
+    <Compile Include="NgxMessage.cs" />
+    <Compile Include="NgxMessenger.cs" />
+    <Compile Include="ObjectKeyAttribute.cs" />
+    <Compile Include="NgxRenderLayer.cs" />
+    <Compile Include="NullContext.cs" />
+    <Compile Include="Processing\Condition.cs" />
+    <Compile Include="Processing\Decorator.cs" />
+    <Compile Include="NgxRenderSystem.cs" />
+    <Compile Include="ScreenRenderLayer.cs" />
+    <Compile Include="WorldRenderLayer.cs" />
+    <Compile Include="Serialization\XmlWriterExtensions.cs" />
+    <Compile Include="NgxGameEngine.cs" />
+    <Compile Include="Side.cs" />
+    <Compile Include="Collisions\CollisionMap.cs" />
+    <Compile Include="Collisions\CollisionPair.cs" />
+    <Compile Include="Input\KeyboardBinding.cs" />
+    <Compile Include="Input\PlayerInputBindings.cs" />
+    <Compile Include="Maps\MapObject.cs" />
+    <Compile Include="Maps\Serialization\CellData.cs" />
+    <Compile Include="Maps\Serialization\MapData.cs" />
+    <Compile Include="Maps\Serialization\MapObjectData.cs" />
+    <Compile Include="Maps\Serialization\MapSerializer.cs" />
+    <Compile Include="Mask.cs" />
+    <Compile Include="DynamicComponent.cs" />
+    <Compile Include="DynamicSystem.cs" />
+    <Compile Include="NgxSession.cs" />
+    <Compile Include="NgxGameSystem.cs" />
+    <Compile Include="NgxDictionary.cs" />
+    <Compile Include="IRenewable.cs" />
+    <Compile Include="IModule.cs" />
+    <Compile Include="ModuleCollection.cs" />
+    <Compile Include="ObjectPool.cs" />
+    <Compile Include="Processing\ProcessManager.cs" />
+    <Compile Include="Behaviors\RandomSelector.cs" />
+    <Compile Include="Behaviors\RootSelector.cs" />
+    <Compile Include="Behaviors\Selector.cs" />
+    <Compile Include="Behaviors\Sequence.cs" />
+    <Compile Include="Behaviors\Behavior.cs" />
+    <Compile Include="Behaviors\BahviorStatus.cs" />
+    <Compile Include="Cameras\Camera2D.cs" />
+    <Compile Include="Collisions\Collision.cs" />
+    <Compile Include="ColorExtensions.cs" />
+    <Compile Include="Debugger.cs" />
+    <Compile Include="Processing\Selector.cs" />
+    <Compile Include="Processing\Task.cs" />
+    <Compile Include="Processing\Composite.cs" />
+    <Compile Include="Processing\Parallel.cs" />
+    <Compile Include="Processing\Process.cs" />
+    <Compile Include="Processing\ProcessModule.cs" />
+    <Compile Include="Processing\ProcessStatus.cs" />
+    <Compile Include="Processing\Repeater.cs" />
+    <Compile Include="Processing\Sequence.cs" />
+    <Compile Include="TableSystem.cs" />
+    <Compile Include="Text\CharacterMap.cs" />
+    <Compile Include="Text\Font.cs" />
+    <Compile Include="Text\FontChar.cs" />
+    <Compile Include="Text\FontCommon.cs" />
+    <Compile Include="Text\FontFile.cs" />
+    <Compile Include="Text\FontInfo.cs" />
+    <Compile Include="Text\FontKerning.cs" />
+    <Compile Include="Text\FontPage.cs" />
+    <Compile Include="Text\NgxString.cs" />
+    <Compile Include="INgxApplication.cs" />
+    <Compile Include="Maps\CellAnimator.cs" />
+    <Compile Include="NgxRectangle.cs" />
+    <Compile Include="Maps\Cell.cs" />
+    <Compile Include="Maps\CellRow.cs" />
+    <Compile Include="Surface.cs" />
+    <Compile Include="Tilesets\TileType.cs" />
+    <Compile Include="Maps\Map.cs" />
+    <Compile Include="Maps\MapManager.cs" />
+    <Compile Include="NgxTable.cs" />
+    <Compile Include="EntityComposition.cs" />
+    <Compile Include="NgxPrefab.cs" />
+    <Compile Include="NgxDatabase.cs" />
+    <Compile Include="INgxTable.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="PrefabArgs.cs" />
+    <Compile Include="Tilesets\AnimationFrame.cs" />
+    <Compile Include="Tilesets\Animation.cs" />
+    <Compile Include="NgxContext.cs" />
+    <Compile Include="IPrefab.cs" />
+    <Compile Include="Serialization\Serializer.cs" />
+    <Compile Include="Tilesets\Tile.cs" />
+    <Compile Include="Tilesets\Tileset.cs" />
+    <Compile Include="Tilesets\TilesetCollection.cs" />
+    <Compile Include="NgxComponent.cs" />
+    <Compile Include="NgxRuntime.cs" />
+    <Compile Include="IdentityPool.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TypeActivator.cs" />
+    <Compile Include="Vector2Extensions.cs" />
+    <Compile Include="Serialization\XmlReaderExtensions.cs" />
+    <Compile Include="Serialization\XmlReaderWrapper.cs" />
+    <Compile Include="Time.cs" />
+    <Compile Include="Clock.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

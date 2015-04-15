@@ -1,0 +1,39 @@
+﻿-- fix warp pipe, change map
+
+-- break bricks with jump
+
+processes should be pooled
+
+tile sets should be IDs
+
+fix camera
+
+map controls to file
+
+implement "GameString" class
+
+implement main menu 
+
+implement in game debug menu
+
+implement pause
+
+break bricks with shell
+
+win stage
+
+fall in pit / lose
+
+one way platforms
+
+get hit / shrink
+
+racoon suit
+
+bounce tiles
+
+implement slope tiles
+
+tune physics
+
+fix time scaling (slow motion)

@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E61399E4-2BD6-40C2-BA2B-5F759352953C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Prototype</RootNamespace>
+    <AssemblyName>Prototype</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\WindowsGL\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\WindowsGL\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Content\Prototype.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Commands\DisableSound.cs" />
+    <Compile Include="Commands\OnJumpBootsTouchShell.cs" />
+    <Compile Include="Commands\OnJumpBootsTouchStompable.cs" />
+    <Compile Include="Commands\OnNullPowerComponentAdd.cs" />
+    <Compile Include="Commands\OnBlockDecoratorComponentAdd.cs" />
+    <Compile Include="Commands\OnPlayerTouchPickup.cs" />
+    <Compile Include="Commands\OnSpriteCompontentAdd.cs" />
+    <Compile Include="Commands\OnSpriteCompontentRemove.cs" />
+    <Compile Include="Commands\OnSuperPowerComponentAdded.cs" />
+    <Compile Include="Commands\PlaySound.cs" />
+    <Compile Include="Commands\SwapSpriteRenderLayer.cs" />
+    <Compile Include="Components\Decorator.cs" />
+    <Compile Include="Components\Duckable.cs" />
+    <Compile Include="Components\NullPower.cs" />
+    <Compile Include="Components\Pickup.cs" />
+    <Compile Include="Components\Dispencer.cs" />
+    <Compile Include="Components\MapLocale.cs" />
+    <Compile Include="Components\Mobility.cs" />
+    <Compile Include="Components\Interactor.cs" />
+    <Compile Include="Components\JumpBoots.cs" />
+    <Compile Include="Components\Projectile.cs" />
+    <Compile Include="Components\SpawnPoint.cs" />
+    <Compile Include="Components\SpriteLayer.cs" />
+    <Compile Include="Components\Portal.cs" />
+    <Compile Include="Components\SuperPower.cs" />
+    <Compile Include="Components\WarpPipeConnection.cs" />
+    <Compile Include="Contexts\TestingContext.cs" />
+    <Compile Include="Entities\BrickParticle.cs" />
+    <Compile Include="Entities\Koopa.cs" />
+    <Compile Include="Components\Shell.cs" />
+    <Compile Include="Entities\Mushroom.cs" />
+    <Compile Include="Entities\DispencerBlock.cs" />
+    <Compile Include="Entities\Spawn.cs" />
+    <Compile Include="Entities\WarpPipe.cs" />
+    <Compile Include="Processes\BreakBrick.cs" />
+    <Compile Include="Processes\EnterMainMenu.cs" />
+    <Compile Include="Processes\TouchMushroom.cs" />
+    <Compile Include="Processes\ExitSuperPower.cs" />
+    <Compile Include="Processes\PopBlock.cs" />
+    <Compile Include="Processes\EnterStage.cs" />
+    <Compile Include="Processes\EnterWorld.cs" />
+    <Compile Include="Processes\ExitStage.cs" />
+    <Compile Include="Processes\ContinueGame.cs" />
+    <Compile Include="Processes\PopPower.cs" />
+    <Compile Include="Systems\DebugRenderSystem.cs" />
+    <Compile Include="Systems\DuckSystem.cs" />
+    <Compile Include="Systems\GuiRenderSystem.cs" />
+    <Compile Include="User\Config.cs" />
+    <Compile Include="User\UserOptions.cs" />
+    <Compile Include="User\Profile.cs" />
+    <Compile Include="User\QuestLog.cs" />
+    <Compile Include="Processes\EnterWarpPipe.cs" />
+    <Compile Include="Systems\EntityCollisions.cs" />
+    <Compile Include="Systems\ShellSystem.cs" />
+    <Compile Include="Systems\StompSystem.cs" />
+    <Compile Include="Components\CoinBag.cs" />
+    <Compile Include="Components\WorldNavigator.cs" />
+    <Compile Include="Behaviors\MobBehavior.cs" />
+    <Compile Include="Components\Controller.cs" />
+    <Compile Include="Components\Animator.cs" />
+    <Compile Include="Components\Brain.cs" />
+    <Compile Include="Components\MetaData.cs" />
+    <Compile Include="Components\Player.cs" />
+    <Compile Include="Components\Spatial.cs" />
+    <Compile Include="Components\RigidBody.cs" />
+    <Compile Include="Components\Sprite.cs" />
+    <Compile Include="Contexts\IntroContext.cs" />
+    <Compile Include="Contexts\MenuContext.cs" />
+    <Compile Include="Contexts\WorldContext.cs" />
+    <Compile Include="Contexts\StageContext.cs" />
+    <Compile Include="Entities\CoinBlock.cs" />
+    <Compile Include="Entities\Camera.cs" />
+    <Compile Include="Entities\CoinPop.cs" />
+    <Compile Include="Entities\Goomba.cs" />
+    <Compile Include="Entities\Mario.cs" />
+    <Compile Include="Entities\WorldMario.cs" />
+    <Compile Include="Entities\StagePortal.cs" />
+    <Compile Include="Processes\PopCoin.cs" />
+    <Compile Include="Processes\PopBrick.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PrototypeGame.cs" />
+    <Compile Include="Systems\JumpSystem.cs" />
+    <Compile Include="Systems\MobilitySystem.cs" />
+    <Compile Include="Components\Stompable.cs" />
+    <Compile Include="Systems\AnimationSystem.cs" />
+    <Compile Include="Systems\BehaviorSystem.cs" />
+    <Compile Include="Systems\CameraSystem.cs" />
+    <Compile Include="Systems\HudRenderSystem.cs" />
+    <Compile Include="Systems\HudSystemData.cs" />
+    <Compile Include="Systems\MapCollisionSystem.cs" />
+    <Compile Include="Systems\EntityCollisionSystem.cs" />
+    <Compile Include="Systems\WorldRailSystem.cs" />
+    <Compile Include="Systems\PhysicsSystem.cs" />
+    <Compile Include="Systems\PlayerInputSystem.cs" />
+    <Compile Include="Systems\SpatialSystem.cs" />
+    <Compile Include="Systems\SpriteRenderSystem.cs" />
+    <Compile Include="Systems\MapRenderSystem.cs" />
+    <Compile Include="Properties.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\WindowsGL\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\WindowsGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\WindowsGL\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.Sdl">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\WindowsGL\Tao.Sdl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="C:\Program Files (x86)\MonoGame\v3.0\Assemblies\WindowsGL\SDL.dll">
+      <Link>SDL.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\consolas_0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fonts\Readme.txt" />
+    <Content Include="Content\Images\smb3-entity.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\smb3-world.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Prototype.ico" />
+    <Content Include="Content\Sounds\100023.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100003.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100008.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100010.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100011.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100039.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100030.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100001.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100002.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100029.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100004.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100006.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100007.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100009.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100012.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100013.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100015.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100016.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100017.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100018.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100019.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100020.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100022.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100024.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100025.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100026.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100027.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100035.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100028.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100031.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100043.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100032.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100033.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100034.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100041.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100036.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100037.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100038.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100040.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100042.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100044.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100005.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100014.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\100021.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Tilesets\smb3-entity.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Tilesets\smb3-world.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Fonts\consolas.bmfc" />
+    <None Include="Content\Fonts\consolas.fnt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Images\smb3-world.pdn" />
+    <None Include="Content\Maps\1001.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Maps\1001.tmx" />
+    <None Include="Content\Maps\1002.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Maps\1002.tmx">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Content\Maps\9000.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Maps\9000.tmx" />
+    <None Include="Readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NgxLib\NgxLib.csproj">
+      <Project>{B70101B9-A2D7-479B-86E9-77BFA36C8942}</Project>
+      <Name>NgxLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>$(SolutionDir)\..\tools\MapCompiler $(ProjectDir)\content\maps</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
