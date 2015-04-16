@@ -7,7 +7,7 @@ The NES classic Super Mario Bros 3 is the design reference. It's one of the best
 This is in no way a perfect emulation of SMB3. There's a ton of work left and there's a lot of things in here that I kind of hacked together just to get something working. 
 
 Most of the code is custom but I did use some 3rd party stuff: 
-- MonoGame for window management, rendering, sound, and vector stuff. 
+- [MonoGame](http://www.monogame.net/) for window management, rendering, sound, and vector stuff. 
 - The maps are designed in [Tiled](http://www.angelcode.com/products/bmfont/). 
 - Fonts are created using [bmfont](http://www.mapeditor.org/).
 
