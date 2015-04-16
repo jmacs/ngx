@@ -18,13 +18,13 @@ The following are a few of the main architecture concepts in the engine.
 An entity is just an integer ID. There is no main "game object". An entity is basically a primary key.
 
 ###Component
-An object that contains the state data for one aspect of an entity. Think of a component as a table row in a database. It has no methods for behavior. If you want to create a component, make a class and make it inherit NgxComponet. Components are associated to one entity and an entity cannot have two or more of the same component types associated with it.
+An object that contains the state data for one aspect of an entity. Think of a component as a table row in a database. It has no methods for behavior. If you want to create a component, make a class and have it inherit NgxComponent. Components are associated to one entity and an entity cannot have two or more of the same component types associated with it.
 
 ###Table
-A table is a collection of game components. Each "row" in the table is a component and each component has a entity key. So if you want a "Position" component for a player entity you could write something like "var pos = PositionTable[player]". Tables handle object pooling and other infrastructure related tasks. One thing to remember... adding (and removing) a component from the table is an asyncronous operation. You cannot add a comonent and start working with it right away.
+A table is a collection of game components. Each "row" in the table is a component and each component has a entity key. So if you want a "Position" component for a player entity you could write something like "var pos = PositionTable[playerEntity]". Tables handle object pooling and other infrastructure related tasks. One thing to remember... adding (and removing) a component from the table is an asyncronous operation. Table operations are "committed" at the end of each frame so you cannot add a comonent and start working with it right away.
 
 ###Database
-A collection of Tables.
+A collection of Tables just like a database.
 
 ###Prefab
 A prefab is a factory for creating entities. For example, the Mario entity prefab creates components in these tables:
@@ -57,4 +57,4 @@ A message is like an event notification. Commands respond to messages.
 
 
 
-Disclaimer - All of the game assets, characters, music, etc do not belong to me. They are used for educational purposes only.
+*Disclaimer - All of the game assets, characters, music, etc do not belong to me. They are used for educational purposes only.*
