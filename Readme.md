@@ -1,6 +1,6 @@
 #Ngx - a 2D Game Engine
 
-Ngx is a 2D game engine written in C#. It mainly serves as a sandbox to learn Entity Component Sytsems (ECS), data driven architecture, and general game programming techniques. 
+Ngx is a 2D game engine written in C#. It mainly serves as a sandbox to learn Entity Component Systems (ECS), data driven architecture, and general game programming techniques. 
 
 The NES classic Super Mario Bros 3 is the design reference. It's one of the best examples of 2D platforming and it is simple enough to take on as a first moderately-sized game project.
 
